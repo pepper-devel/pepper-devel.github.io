@@ -103,11 +103,27 @@
             color: white;
         }
     </style>
+    <script>
+        // ブラウザの言語設定を検出して自動リダイレクト
+        (function() {
+            const userLang = navigator.language || navigator.userLanguage;
+            const isJapanese = userLang.startsWith('ja');
+            
+            // URLパラメータで手動言語選択をチェック
+            const urlParams = new URLSearchParams(window.location.search);
+            const manualLang = urlParams.get('lang');
+            
+            // 手動選択がない場合のみ自動リダイレクト
+            if (!manualLang && isJapanese) {
+                window.location.href = 'index.html';
+            }
+        })();
+    </script>
 </head>
 <body>
     <div class="container">
         <div class="language-switch">
-            <a href="index.html">日本語</a>
+            <a href="index.html?lang=ja">日本語</a>
         </div>
         
         <h1>pepper-devel</h1>

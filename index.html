@@ -20,21 +20,58 @@
             padding: 60px 40px;
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 500px;
+            max-width: 600px;
         }
         h1 {
             color: #333;
             margin-bottom: 30px;
             font-size: 2.5rem;
         }
+        h2 {
+            color: #333;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        .app-section {
+            text-align: left;
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        .app-title {
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .app-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+        }
+        .app-description {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .app-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
         .link {
             display: inline-block;
-            padding: 15px 40px;
+            padding: 12px 25px;
             background: #667eea;
             color: white;
             text-decoration: none;
-            border-radius: 30px;
-            font-size: 1.2rem;
+            border-radius: 25px;
+            font-size: 1rem;
             font-weight: 600;
             transition: all 0.3s ease;
         }
@@ -43,12 +80,35 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
+        .link-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+        .link-secondary:hover {
+            background: #667eea;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>pepper-devel</h1>
-        <a href="privacy-policy.html" class="link">プライバシーポリシー</a>
+        
+        <h2>📱 アプリ</h2>
+        
+        <div class="app-section">
+            <div class="app-title">
+                <img src="assets/ezwol-icon.png" alt="Ezwol" class="app-icon">
+                Ezwol
+            </div>
+            <p class="app-description">
+                Wake-on-LANを簡単に送信できるシンプルなアプリです。ホーム画面ウィジェットにも対応しており、ワンタップでネットワーク上のデバイスを起動できます。
+            </p>
+            <div class="app-links">
+                <a href="privacy-policy.html" class="link">プライバシーポリシー</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

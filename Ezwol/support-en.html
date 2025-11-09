@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Ezwol</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #2980b9;
+        }
+        .back-link::before {
+            content: '← ';
+        }
+        .language-switch {
+            float: right;
+            margin-bottom: 20px;
+        }
+        .language-switch a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .language-switch a:hover {
+            color: #2980b9;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        p, li {
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .contact-info {
+            background-color: #e8f4fd;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+            margin-top: 30px;
+        }
+        .faq-item {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border-left: 3px solid #3498db;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .faq-answer {
+            color: #555;
+        }
+        .app-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0px;
+        }
+        .app-icon {
+            width: 40px;
+            height: 40px;
+            margin: 0;
+            border-radius: 12px;
+            display: block;
+        }
+        .app-name {
+            font-size: 30px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin: 0;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index-en.html" class="back-link">Back to Home</a>
+        <div class="language-switch">
+            <a href="support.html">日本語</a>
+        </div>
+        
+        <div class="app-header">
+            <img src="../assets/ezwol-icon.png" alt="Ezwol Icon" class="app-icon">
+            <h2 class="app-name">Ezwol</h2>
+        </div>
+        
+        <h1>Support</h1>
+
+        <p>Thank you for using Ezwol. This page provides frequently asked questions and contact information.</p>
+
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">Q: Wake-on-LAN is not working. What should I do?</div>
+            <div class="faq-answer">A: Please check the following:
+                <ul>
+                    <li>Is Wake-on-LAN enabled in the target device's BIOS/UEFI settings?</li>
+                    <li>Are the correct MAC address and IP address entered?</li>
+                    <li>Is the device connected to the same local network?</li>
+                    <li>Are the network firewall settings configured properly?</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: The widget is not updating. What should I do?</div>
+            <div class="faq-answer">A: Go to "Widget Configuration" from the settings screen, select the host to use, and tap the "Update Widget" button.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: How do I use the MAC address scanner?</div>
+            <div class="faq-answer">A: On the host addition screen, tap the camera icon to the right of the MAC address input field and take a picture of the area where the MAC address is written. It will be automatically recognized by OCR.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Is data synchronized to the cloud?</div>
+            <div class="faq-answer">A: No. All data is stored only on your device and is never transmitted to external servers. For more details, please see the <a href="privacy-policy-en.html" style="color: #3498db;">Privacy Policy</a>.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: How do I set up Siri Shortcuts?</div>
+            <div class="faq-answer">A: When you select a host in "Widget Configuration" from the settings screen, Siri Shortcuts will be automatically enabled. You can use it by saying "Hey Siri, Send Wake-on-LAN packet".</div>
+        </div>
+
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>If you have any questions or concerns, please contact us:</p>
+            <p><strong>App Name:</strong> Ezwol</p>
+            <p><strong>Developer:</strong> Naoki Miyai</p>
+            <p><strong>Email:</strong> <a href="mailto:pepper.devel@gmail.com" style="color: #3498db;">pepper.devel@gmail.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/pepper-devel" style="color: #3498db;">https://github.com/pepper-devel</a></p>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #555;">※ It may take several days to respond to inquiries. Thank you for your understanding.</p>
+        </div>
+
+        <h2>Related Links</h2>
+        <ul>
+            <li><a href="privacy-policy-en.html" style="color: #3498db;">Privacy Policy</a></li>
+            <li><a href="https://github.com/pepper-devel/ezwol" style="color: #3498db;">GitHub Repository</a></li>
+        </ul>
+
+        <p style="text-align: center; margin-top: 40px; color: #7f8c8d; font-size: 0.9em;">
+            © 2025 Ezwol. All rights reserved.
+        </p>
+    </div>
+</body>
+</html>

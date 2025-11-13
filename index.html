@@ -56,7 +56,7 @@
         .app-title {
             font-size: 1.5rem;
             color: #667eea;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             font-weight: 700;
             display: flex;
             align-items: center;
@@ -70,12 +70,18 @@
         .app-description {
             color: #666;
             line-height: 1.8;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        .app-store-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
         }
         .app-links {
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
+            justify-content: center;
         }
         .link {
             display: inline-block;
@@ -101,6 +107,17 @@
         .link-secondary:hover {
             background: #667eea;
             color: white;
+        }
+        .app-store-badge {
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .app-store-badge img {
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+        .app-store-badge:hover img {
+            transform: scale(1.05);
         }
     </style>
     <script>
@@ -138,6 +155,11 @@
             <p class="app-description">
                 Wake-on-LANを簡単に送信できるシンプルなアプリです。ホーム画面ウィジェットにも対応しており、ワンタップでネットワーク上のデバイスを起動できます。
             </p>
+            <div class="app-store-container">
+                <a href="https://apps.apple.com/jp/app/ezwol/id6754818137" class="app-store-badge" target="_blank" rel="noopener">
+                    <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83&amp;releaseDate=1731542400" alt="Download on the App Store">
+                </a>
+            </div>
             <div class="app-links">
                 <a href="Ezwol/privacy-policy.html" class="link">プライバシーポリシー</a>
                 <a href="Ezwol/support.html" class="link link-secondary">サポート</a>
